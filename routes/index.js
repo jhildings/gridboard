@@ -21,7 +21,6 @@ router.post('/addgrid', function(req, res) {
     console.log("Gridboard is " + gridboard)
     // Set our collection
     var collection = db.get('board');
-    console.log("loggin collection" + collection)
     var date =   moment().format("YYYY / MM / DD");
     // Submit to the DB
     collection.insert({

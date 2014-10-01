@@ -62,7 +62,7 @@ html. // THAT DOT
   
   
   
-  
+             //Add content
             $( "#add" ).click(function() {
             widgets.push(["<li>" + $("#content").val() + "</li>", 2,5]);
             console.log(widgets);
@@ -76,7 +76,7 @@ html. // THAT DOT
   
   
   
-     
+           //save content
   
           $('.js-seralize').on('click', function() {
               var s = gridster.serialize();
@@ -85,7 +85,7 @@ html. // THAT DOT
               
               $.post(
                       "/addgrid",
-                    {"gridboard" : "hej"}
+                    {"gridboard" : s}
                      
                     );
               
